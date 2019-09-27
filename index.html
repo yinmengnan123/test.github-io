@@ -1,0 +1,403 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #img{
+            width: 890px;
+            height: 593px;
+            overflow:hidden;
+        }
+        body {
+            background: #2d383e url(images/背景.jpg)repeat-x;
+        }
+        #mix{
+            width: 890px;
+
+            margin: 0 auto;
+        }
+        #header{
+            width:890px;
+            height: 188px;
+            margin:0 auto;
+        }
+        #biaoyu{
+            width: 398px;
+            height: 49px;
+            margin:-50px 190px -60px 200px;
+        }
+        #biaoyu2{
+            width: 406px;
+            height: 49px;
+            margin:-136px 20px 288px 200px;
+        }
+
+        #form{
+            width:258px;
+            height: 180px;
+            margin:-468px 258px 100px 630px;
+            /* top:-100px; */
+            text-align:left;
+            /* overflow: hidden; */
+            line-height: 20px;
+        }
+        #form td{
+            font-size: 14px;
+            color: #000;
+            margin: 2px 0 2px 2px;
+        }
+        #nav2{
+            width: 258px;
+            height: 40px;
+            margin:100px 258px 0px 630px;
+            /* margin: 0 auto; */
+            font-size: 18px;
+            float:right;
+            text-align:right;
+        }
+        #slide{
+            width: 890px;
+            height: 593px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #arrow{
+            height: 50px;
+            position: relative;
+            top:-300px;
+        }
+        #previous,#next{
+            width: 30px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            cursor:pointer;
+        }
+        #previous{
+            margin:0 0 0 2px;
+            float:left;
+        }
+        #next{
+            float:right;
+        }
+        #circle{
+            width: 890px;
+            height: 50px;
+            position: relative;
+            top:-120px;
+            overflow:hidden;
+            text-align: center;
+            cursor:pointer;
+        }
+        #circle h1{
+            height: 50px;
+            background-color:rgba(255,255,255,0.6);
+            color: #fff;
+            font-size: 25px;
+            text-align: left;
+            line-height: 50px;
+        }
+        #nav{
+        width:890px;
+        height: 51px;
+        margin:0 auto;
+        background-image: url(images/linkbg.jpg);
+        }
+        #nav ul{
+            width:890px;
+            height: 51px;
+        }
+        #nav ul li{
+            list-style-type: none;
+            float: left;
+            width: 111.25px;
+            height: 51px;
+            text-align: center;
+            line-height: 51px;
+            background:rgba(0, 0, 0, 0.0) url(images/linkr.gif) no-repeat 0 50%;
+        }
+        #nav ul li:first-child{
+            background: rgba(0, 0, 0, 0.0);
+        }
+        #nav ul li a{
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+        }
+        #nav ul li a:hover{
+            color: #000;
+        }
+        #footer{
+            width:890px;
+            height: 115px;
+            margin:0 auto;
+            /* background-color: #2d383e; */
+            text-align: center;
+        }
+        #main{
+            width:890px;
+            height: 490px;
+            margin:0 auto;
+            background-color: #fff;
+        }
+        #sidebar{
+            width:274px;
+            height: 490px;
+            float:left;
+            background-color: #fff;
+        }
+        #sidebar ul{
+            margin: 0 0 0 20px;
+            border-right: 1px solid #666;
+        }
+        #sidebar li{
+            font-size: 14px;
+            color: #666;
+            list-style-type: none;
+            line-height: 25px;
+        }
+        #sidebar hr{
+            width: 70px;
+            margin:0;
+        }
+        #news{
+            width:313px;
+            height: 300px;
+            background-color: #fff;
+            float: left;
+        }
+        #news ul{
+            margin: 0 0 0 20px;
+        }
+        #news ul li{
+            font-size: 14px;
+            color: #666;
+            list-style-type: none;
+            line-height: 18px;
+            padding: 0 0 0 20px;
+        }
+        #news ul li:nth-child(2n+1){
+            color:#ffab10;
+            background: rgba(0, 0, 0, 0.0) url(images/ico.gif) no-repeat -2px 50%;
+        }
+        #about{
+            width:303px;
+            height: 300px;
+            background-color: #fff;
+            float:left;
+        }
+        #about p{
+            font-size: 14px;
+            color: #666;
+            line-height: 20px;
+            width: 240px;
+            margin: 0 0 0 20px;
+        }
+        #about .img{
+            margin: 0 0 0 20px;
+        }
+        #esate{
+            width: 616px;
+            height: 200px;
+            background-color: #fff;
+            float:left;
+            #esate ul{
+                margin: 0 auto;
+                padding: 0;
+            }
+            #easte .img{
+                float:left;
+            }
+    </style>
+ </head>
+ <body>
+    <div id="mix">
+     <div id="header">
+        <img src="images/校徽.png" alt="" />
+    </div>
+    <div id="biaoyu">
+        <img src="images/旁边.png" alt="" />
+    </div>
+    <div id="biaoyu2">
+        <img src="images/旁边上.png" alt="" />
+    </div>
+    <!-- <div id="nav2">
+        <td width="180" height="40" bgcolor="#fff">
+                      <label>站内搜索:<input name="keyword2" id="keyword2" type="text" value="" size="10" font-family="微软雅黑" color="#666" class="input1"/></label>
+        </td>
+    </div> -->
+    <div id="form">
+    <form action="server.php" method="post">
+   <table>
+        <div id="nav2">
+        <td width="218" height="40" <!-- bgcolor="#fff" -->>
+                      <label>站内搜索:<input name="keyword2" id="keyword2" type="text" value="" size="10" font-family="微软雅黑" color="#666" class="input1"/></label>
+        </td>
+        <td  width="126" height="40" alt="" >
+        <a href="javascript:doSearch()">
+        </div>
+       <tr>
+           <td>校园网登录</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td>学号</td>
+           <td><input type="Student ID" name="" id="" /></td>
+       </tr>
+       <tr>
+           <td>密码</td>
+           <td><input type="password" name="" id="" /></td>
+       </tr>
+       <tr>
+           <td>运营商</td>
+           <td>
+                <select name="" id="">
+                    <option value="1">中国联通</option>
+                    <option value="2">中国移动</option>
+                    <option value="3">中国电信</option>
+                </select>
+           </td>
+       </tr>
+   </table>
+   </form>
+   </div>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">校情总览</a></li>
+            <li><a href="#">校园新闻</a></li>
+            <li><a href="#">教育教学</a></li>
+            <li><a href="#">科学研究</a></li>
+            <li><a href="#">招生就业</a></li>
+            <li><a href="#">合作交流</a></li>
+            <li><a href="#">校园文化</a></li>
+        </ul>
+    </div>
+    <div id="slide">
+        <div id="img">
+            <img src="images/1.jpg" alt="" />
+            <img src="images/2.jpg" alt="" />
+            <img src="images/3.jpg" alt="" />
+            <img src="images/4.jpg" alt="" />
+            <img src="images/5.jpg" alt="" />
+            <img src="images/6.jpg" alt="" />
+        </div>
+        <div id="arrow">
+            <div id="previous"><</div>
+            <div id="next">></div>
+        </div>
+        <div id="circle">
+            <h1>我校学生优秀摄影作品</h1>
+            <h1>我校学生优秀摄影作品</h1>
+            <h1>我校学生优秀摄影作品</h1>
+            <h1>我校学生优秀摄影作品</h1>
+            <h1>我校学生优秀摄影作品</h1>
+            <h1>我校学生优秀摄影作品</h1>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var n=0;//记录当前图片序号
+        $(document).ready(function() {
+            //定义自动翻页
+            function slideImg(){
+                n++;
+                if (n>$("#circle h1").length-1) {
+                    n=0;
+                };
+                $("#img img").hide();//隐藏所有图片
+                $("#img img").eq(n).fadeIn(500);//显示索引图片
+                $("#circle h1").hide();
+                $("#circle h1").eq(n).fadeIn(500);
+            }
+            var interval=setInterval(slideImg, 5000);//5秒自动翻页
+            //点击左箭头
+            $("#previous").click(function(event) {
+                n--;
+                if (n<0) {
+                    n=$("#circle h1").length-1;
+                };
+                $("#img img").hide();//隐藏所有图片
+                $("#img img").eq(n).fadeIn(500);//显示索引图片
+                $("#circle h1").hide();
+                $("#circle h1").eq(n).fadeIn(500);
+            });
+              //点击右箭头
+            $("#next").click(function(event) {
+                n++;
+                if (n>$("#circle h1").length-1) {
+                    n=0;
+                };
+                $("#img img").hide();//隐藏所有图片
+                $("#img img").eq(n).fadeIn(500);//显示索引图片
+                $("#circle h1").hide();
+                $("#circle h1").eq(n).fadeIn(500);
+            });
+        });
+    </script>
+    <div id="main">
+        <div id="sidebar">
+            <ul>
+               <li><img src="images/week.png" alt="每周工作" /></li>
+               <li>  第一周工作计划与安排</li>
+               <li>  第二周工作计划与安排</li>
+               <li>  第三周工作计划与安排</li>
+               <li>  第四周工作计划与安排</li>
+               <li>  第五周工作计划与安排</li>
+               <li>  第六周工作计划与安排</li>
+               <li>  第七周工作计划与安排</li>
+               <li>  第八周工作计划与安排</li>
+               <li>  第九周工作计划与安排</li>
+
+            <li><img src="images/more.gif" alt="" /></li>
+               <li><hr /></li>
+               <li><img src="images/jxky.png" alt="" /></li>
+               <li>  教学科研 </li>
+               <li><img src="images/党工团.png" alt="" /></li>
+               <li>  党工团 </li>
+               <li><img src="images/社团活动.png" alt="" /></li>
+               <li>  社团活动 </li>
+               <li><img src="images/more.gif" alt="" /></li>
+           </ul>
+       </div>
+       <div id="news">
+        <img class="imgtitle" src="images/校园新闻.png" alt="" />
+        <ul>
+            <li>2018年12月14日</li>
+            <li>睢宁一中被中国矿业大学授予“优秀生源贡献奖”</li>
+            <li>2018年12月12日</li>
+            <li>睢宁一中组织全体党员参观睢宁县廉政警示教育基地</li>
+            <li>2018年12月03日</li>
+            <li>睢宁一中召开“加强师德师风建设、拒绝有偿补课公开承诺”推进会</li>
+            <li>2018年10月26日</li>
+            <li>睢宁县第一中学2018年秋季田径运动会开幕辞</li>
+            <li>2018年10月26日</li>
+            <li>睢宁一中召开四星级高中创建推进会</li>
+        </ul>
+    </div>
+    <div id="about">
+        <img class="imgtitle" src="images/教工之家.png"alt="" />
+        <p>    我校教职工象棋比赛圆满结束</p>
+        <p>2016年12月21日~23日</p>
+        <p>我校于四号楼2楼小办公室举行了教工象棋赛，三个年级分别派出代表本年级最高水平的三位老师参赛。比赛根据个人积分决出个人名次，按照团体积分决出团体名次，赛场争分夺秒，精心策划，苦思冥想，为大家献上了一场智慧的碰撞！最终，高三年级代表队获得团体冠军（赵曼、杜大伟、钱超），高一、高二分获二三名。</p>
+    </div>
+    <div id="estate">
+        <div><img class="imgtitle" src="images/校景.jpg" alt="校景" /></div>
+    </div>
+</div>
+    <div id="footer">
+    <img src="images/footer2.png" alt="声明" />
+</div>
+ </body>
+ </html>
